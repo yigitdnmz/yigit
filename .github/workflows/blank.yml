@@ -1,0 +1,391 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include<conio.h>
+#include<string.h>
+
+ 
+int main(){ 
+char username[20];
+char password[10];
+int Danaantrikot_PRICE;
+Danaantrikot_PRICE=45;
+int Danapirzola_PRICE;
+Danapirzola_PRICE=45;
+int Danalokum_PRICE;
+Danalokum_PRICE=40;
+int Kuzupirzola_PRICE;
+Kuzupirzola_PRICE=45;
+int Kofte_PRICE;
+Kofte_PRICE=25;
+int Karisikkebap_PRICE;
+Karisikkebap_PRICE=60;
+int chineseravioli_PRICE;
+chineseravioli_PRICE = 35;
+int SalmonSushi_PRICE;
+SalmonSushi_PRICE= 25;
+int CrunchyRoll_PRICE;
+CrunchyRoll_PRICE=35; 
+int FujiRoll_PRICE;
+FujiRoll_PRICE=40;
+int CatFish_PRICE;
+CatFish_PRICE=40;
+int SalmonFish_PRICE;
+SalmonFish_PRICE=30;
+int BullheadFish_PRICE;
+BullheadFish_PRICE=30;
+int BluefintunaFish_PRICE;
+BluefintunaFish_PRICE=45;
+int TomatoSoup_PRICE;
+TomatoSoup_PRICE=10;
+int FishSoup_PRICE;
+FishSoup_PRICE=15;
+int VegetableSoup_PRICE;
+VegetableSoup_PRICE=10;
+int MushroomSoup_PRICE;
+MushroomSoup_PRICE=15;
+int SeasonSalad_PRICE;
+SeasonSalad_PRICE=18;
+int GreenSalad_PRICE;
+GreenSalad_PRICE=18;
+int ShepperdSalad_PRICE;
+ShepperdSalad_PRICE=20;
+int SezarSalad_PRICE;
+SezarSalad_PRICE=25;
+int OctopusSalad_PRICE;
+OctopusSalad_PRICE=30;
+int ApplePie_PRICE;
+ApplePie_PRICE=20;
+int StrawberryCheesecake_PRICE;
+StrawberryCheesecake_PRICE=25;
+int Waffle_PRICE;
+Waffle_PRICE=20;
+int PelitCustard_PRICE;
+PelitCustard_PRICE=20;
+int Baklava_PRICE;
+Baklava_PRICE=45;
+int Tiramisu_PRICE;
+Tiramisu_PRICE=20;
+char name[20];
+char surname[20];
+char adress[100];
+char phone[25];
+int TEA_PRICE;
+TEA_PRICE=5;
+int Espresso_PRICE;
+Espresso_PRICE=15;
+int Capucino_PRICE;
+Capucino_PRICE=15;
+int CaffeLatte_PRICE;
+CaffeLatte_PRICE=18;
+int TurkishCoffee_PRICE;
+TurkishCoffee_PRICE=13;
+int Mocha_PRICE;
+Mocha_PRICE=20;
+int WATER_PRICE;
+WATER_PRICE=5;
+int Cola_PRICE;
+Cola_PRICE=10;
+int Fanta_PRICE;
+Fanta_PRICE=10;
+int Sprite_PRICE;
+Sprite_PRICE=10;
+int IceTea_PRICE;
+IceTea_PRICE=10;
+int FruiteJuice_PRICE;
+FruiteJuice_PRICE=8;
+int MineralWater_PRICE;
+MineralWater_PRICE=7;
+int Beer50cl_PRICE;
+Beer50cl_PRICE;20;
+int Beer30cl_PRICE;
+Beer30cl_PRICE=17;
+int Whisky_PRICE;
+Whisky_PRICE= 45;
+int Raki_PRICE;
+Raki_PRICE=30;
+int whitewine_PRICE;
+whitewine_PRICE=30;
+int Rosewine_PRICE;
+Rosewine_PRICE=35;
+
+
+    int choice = 0;
+    double totalPrice = 0;
+
+do{
+    printf("Enter username: ");
+	scanf("%s",username);
+	printf("Enter password: ");
+	scanf("%s",password);
+	if (strcmp(username, "Admin") == 0 && strcmp(password, "123456") == 0)
+	printf("Access granted\n");
+	else printf("Access denied\n");
+   }
+   while(strcmp(username, "Admin") != 0 || strcmp(password, "123456") != 0);
+printf("\n\n\n\n\n");
+
+
+
+
+    printf(" xxxxxxxxx                                                             xxxxxxxxx                    \n ");
+    printf(" xxxxxxx                    ! WELCOME TO !                             xxxxxxx                    \n");
+    printf("   xxxxx                    YIGIT RESTAURANT                             xxxxx                   \n");
+    printf("    xxx                                                                   xxx                  \n");
+    printf("     x                                                                     x                \n");
+     
+    printf("\n\n\n\n");
+    printf("May I take your order? \n\n");
+ 
+    do{
+        printf("Menu: \n\n");
+        printf("        - Meat -              \n");
+        printf("1. Veal Meat              **** 45 tl ****       \n", Danaantrikot_PRICE);
+        printf("2. Veal Chops             **** 45 TL *****     \n", Danapirzola_PRICE);
+        printf("3. Adana Kabob            **** 40 TL *****  \n", Danalokum_PRICE);
+        printf("4. Lamb Chops             **** 45 TL ****   \n",Kuzupirzola_PRICE);
+        printf("5. Kofte                  **** 25 TL **** \n", Kofte_PRICE);
+        printf("6. Mixxed Kabob           **** 60 TL ****  \n",Karisikkebap_PRICE );
+        printf("\n\n");
+        printf("        - Chinese Cuisine - \n");
+        printf("7. Chinese Ravioli        **** 35 TL ****\n",chineseravioli_PRICE);
+        printf("8. Salmon Sushi (6pcs)    **** 25 TL ****\n",SalmonSushi_PRICE);
+        printf("9. Crunchy Roll (4pcs)    **** 35 TL **** \n",CrunchyRoll_PRICE);        
+        printf("10. Fuji Roll (4pcs)      **** 40 TL ****\n",FujiRoll_PRICE);
+        printf("\n\n");
+        printf("        - Fish -  \n");
+        printf("11. Cat Fish               **** 40 TL ****\n",CatFish_PRICE);
+        printf("12. Salmon Fish            **** 30 TL ****\n",SalmonFish_PRICE);
+        printf("13. Bullhead Fish          **** 30 TL ****\n",BullheadFish_PRICE);
+        printf("14. Bluefin tuna Fish      **** 45 TL ****\n",BluefintunaFish_PRICE);
+        printf("\n\n");
+        printf("        - Soup -  \n");
+        printf("15. Tomato Soup            **** 10 TL **** \n",TomatoSoup_PRICE);
+        printf("16. Fish Soup              **** 15 TL **** \n",FishSoup_PRICE);
+        printf("17. Vegetable Soup         **** 10 TL **** \n",VegetableSoup_PRICE);
+        printf("18. Mushroom Soup          **** 15 TL **** \n",MushroomSoup_PRICE);
+        printf("\n\n");
+        printf("        - Salad -\n ");
+        printf("19. Season Salad           **** 18 TL ****    \n",SeasonSalad_PRICE);
+        printf("20. Green Salad            **** 18 TL ****    \n",GreenSalad_PRICE);
+        printf("21. Shepperd Salad         **** 20 TL ****    \n",ShepperdSalad_PRICE);
+        printf("22. Sezar Salad            **** 25 TL ****    \n",SezarSalad_PRICE);
+        printf("23. Octopus Salad          **** 30 TL ****    \n",OctopusSalad_PRICE);
+        printf("\n\n");
+        printf("       - Desert -\n");
+        printf("24. Apple Pie              **** 20 TL ****  \n",ApplePie_PRICE);
+        printf("25. Strawberry Cheesecake  **** 25 TL ****  \n",StrawberryCheesecake_PRICE);
+        printf("26. Waffle                 **** 20 TL ****  \n",Waffle_PRICE);
+        printf("27. Pelit Custard          **** 20 TL ****  \n",PelitCustard_PRICE);
+        printf("28. Baklava                **** 45 TL **** \n",Baklava_PRICE);
+        printf("29. Tiramisu               **** 20 TL ****   \n",Tiramisu_PRICE);
+        printf("\n\n");
+        printf("      - Hot Drink -\n");
+        printf("30. Tea                    **** 5 TL  **** \n",TEA_PRICE);
+        printf("31. Espresso               **** 15 TL ****  \n",Espresso_PRICE);
+        printf("32. Capucino               **** 15 TL ****   \n",Capucino_PRICE);
+        printf("33. Cafe Latte             **** 18 TL ****  \n",CaffeLatte_PRICE);
+        printf("34. Turkish Coffee         **** 13 TL ****   \n",TurkishCoffee_PRICE);
+        printf("35. Mocha                  **** 20 TL ****    \n",Mocha_PRICE);
+        printf("\n\n");
+        printf("      - Cold Drink -\n");
+        printf("36. Water                 **** 5 TL  **** \n",WATER_PRICE);
+        printf("37. Cola                  **** 10 TL **** \n",Cola_PRICE);
+        printf("38. Fanta                 **** 10 TL **** \n",Fanta_PRICE);
+        printf("39. Sprite                **** 10 TL **** \n",Sprite_PRICE);
+        printf("40. Ice Tea               **** 10 TL **** \n",IceTea_PRICE);
+        printf("41. Fruite Juice          **** 8  TL **** \n",FruiteJuice_PRICE);
+        printf("42. Mineral Water         **** 7  TL **** \n",MineralWater_PRICE);
+        printf("\n\n");
+        printf("     - Alcoholic Drink -\n");
+        printf("43. Beer  50 cl          **** 20 TL **** \n",Beer50cl_PRICE);
+        printf("44. Beer  33 cl          **** 17 TL ****  \n",Beer30cl_PRICE);
+        printf("45. Whisky               **** 45 TL **** \n",Whisky_PRICE);
+        printf("46. Raki                 **** 30 TL **** \n",Raki_PRICE);
+        printf("47. White wine           **** 30 TL **** \n",whitewine_PRICE);
+        printf("48. Rose wine            **** 35 TL ****  \n",Rosewine_PRICE);
+        
+    
+
+        printf("49. Exit\n\n"); 
+        
+        printf("Enter an item: ");
+        scanf("%i", &choice);
+ 
+        switch(choice){
+        case 1:
+            totalPrice += Danaantrikot_PRICE;
+            break;
+        case 2:
+            totalPrice += Danapirzola_PRICE;
+            break;
+        case 3:
+            totalPrice += Danalokum_PRICE;
+            break;
+        case 4:
+            totalPrice += Kuzupirzola_PRICE;
+            break;
+        case 5:
+            totalPrice += Kofte_PRICE;
+            break;
+        case 6:
+            totalPrice += Karisikkebap_PRICE;
+            break;
+        case 7:
+            totalPrice += chineseravioli_PRICE;
+            break;
+        case 8:
+            totalPrice += SalmonSushi_PRICE;
+            break;
+        case 9:
+            totalPrice += CrunchyRoll_PRICE;
+            break;
+        case 10:
+            totalPrice += FujiRoll_PRICE;
+            break;
+        case 11:
+            totalPrice += CatFish_PRICE;
+            break;
+        case 12:
+            totalPrice += SalmonFish_PRICE;
+            break;
+        case 13:
+            totalPrice += BullheadFish_PRICE;
+            break; 
+        case 14:
+            totalPrice += BluefintunaFish_PRICE;
+            break;
+        case 15:
+            totalPrice += TomatoSoup_PRICE;
+            break;
+        case 16:
+            totalPrice += FishSoup_PRICE;
+            break;  
+        case 17:
+            totalPrice += VegetableSoup_PRICE;
+            break;  
+        case 18:
+            totalPrice += MushroomSoup_PRICE;
+            break;
+        case 19:
+            totalPrice += SeasonSalad_PRICE;
+            break; 
+        case 20:
+            totalPrice += GreenSalad_PRICE;
+            break; 
+        case 21:
+            totalPrice += ShepperdSalad_PRICE;
+            break; 
+        case 22:
+            totalPrice += SezarSalad_PRICE;
+            break; 
+        case 23:
+            totalPrice += OctopusSalad_PRICE;
+            break; 
+        case 24:
+            totalPrice += ApplePie_PRICE;
+            break; 
+        case 25:
+            totalPrice += StrawberryCheesecake_PRICE;
+            break; 
+        case 26:
+            totalPrice += Waffle_PRICE;
+            break; 
+        case 27:
+            totalPrice += PelitCustard_PRICE;
+            break; 
+        case 28:
+            totalPrice += Baklava_PRICE;
+            break; 
+        case 29:
+            totalPrice += Tiramisu_PRICE;
+            break; 
+        case 30:
+            totalPrice += TEA_PRICE;
+            break;
+        case 31:
+            totalPrice += Espresso_PRICE;
+            break;
+        case 32:
+            totalPrice += Capucino_PRICE;
+            break;    
+        case 33:
+            totalPrice += CaffeLatte_PRICE;
+            break;
+        case 34:
+            totalPrice += TurkishCoffee_PRICE;
+            break;
+        case 35:
+            totalPrice += Mocha_PRICE;
+            break;
+        case 36:
+            totalPrice += WATER_PRICE;
+            break;
+        case 37:
+            totalPrice += Cola_PRICE;
+            break;
+        case 38:
+            totalPrice += Fanta_PRICE;
+            break;
+        case 39:
+            totalPrice += Sprite_PRICE;
+            break;
+        case 40:
+            totalPrice += IceTea_PRICE;
+            break;
+        case 41:
+            totalPrice += FruiteJuice_PRICE;
+            break;
+        case 42:
+            totalPrice += MineralWater_PRICE;
+            break;
+        case 43:
+            totalPrice += Beer50cl_PRICE;
+            break;
+        case 44:
+            totalPrice += Beer30cl_PRICE;
+            break;
+        case 45:
+            totalPrice += Whisky_PRICE;
+            break;
+        case 46:
+            totalPrice += Raki_PRICE;
+            break;
+        case 47:
+            totalPrice += whitewine_PRICE;
+            break;
+        case 48:
+            totalPrice += Rosewine_PRICE;
+            break;
+        case 49 :
+            printf("Than you for ordering at YIGIT Restaurant! \n");
+            break;
+        default:
+            printf("*** Error:  This is not on the menu. \n");
+            break;
+        }
+         
+        printf("Total so far: %.2lf TL \n\n", totalPrice);
+     
+    } while (choice != 49);
+ 
+    printf("Your order is %.2lf TL \n\n", totalPrice);
+    printf("Please Give Your Contact Details \n");
+    printf("Please give your name: \n");
+    scanf("%s",name);
+    printf("please give your surname \n");
+    scanf("%s",surname);
+    printf("please give your phone \n");
+    scanf("%s",phone);
+    printf("please give your adress \n");
+    scanf("%s",adress);
+    printf("Thank you for coming to YIGIT Restaurant.\n");
+    printf("Have a nice day!.\n\n");
+    printf("\n\n\n");
+	printf("                       *********************************************************************************************\n");
+	printf("                                             Your Order Will Be At Your Door In 30 minutes.\n");
+	printf("                                                       .....HAPPY ORDERING.....\n");
+	printf("                       *********************************************************************************************\n");
+	
+ 
+    system("pause");
+}
